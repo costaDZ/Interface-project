@@ -35,8 +35,13 @@ body {
 
 .header-area .logo {
     font-weight: bold;
-    width: 300px;
+    width: 400px;
     padding: 15px;
+    font-size: 35px;
+}
+
+.header-area .logo span {
+    color: var(--main-color);
 }
 
 .header-area .links {
@@ -55,6 +60,7 @@ body {
 .header-area .links li a {
     color: #fffefd;
     text-decoration: none;   
+    font-size: 26px;
 }
 
 .header-area .links li a:hover,
