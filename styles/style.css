@@ -1,12 +1,19 @@
+:root {
+    --main-color: #FF9800;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+        font-size: 26px;
+        line-height: 2;
 }
 
 /*** landing page***/
 .landing {
     min-height: 100vh;
-    background-image: url(../images/04.webp);
+    background-image: url(../images/03.png);
     background-size: cover;
+    transition: 2s ease-in-out;
 }
 
 .overlay {
@@ -31,6 +38,7 @@ body {
     width: 300px;
     padding: 15px;
 }
+
 .header-area .links {
     list-style: none;
     width: 100%;
@@ -38,11 +46,37 @@ body {
     padding-left: 0;
     padding-right: 40px;
     font-size: 15px;
-
-
 }
-
 .header-area .links li {
     display: inline-block;
     margin-left: 10px;
+}
+
+.header-area .links li a {
+    color: #fffefd;
+    text-decoration: none;   
+}
+
+.header-area .links li a:hover,
+.header-area .links li a:active{
+    color: var(--main-color);
+    transition: 0.4s;
+}
+.introduction-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fffefd;
+    text-align: center;
+}
+
+.introduction-text h1 {
+    font-size: 53px;
+    margin: 0;
+}
+
+.introduction-text h1 span {
+    color: var(--main-color);
 }
