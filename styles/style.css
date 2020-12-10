@@ -2,18 +2,170 @@
     --main-color: #FF9800;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
         font-size: 26px;
         line-height: 2;
 }
 
+/*******setting box ******/
+.setting-box {
+    position: fixed;
+    top: 0;
+    background-color: #253c3c;
+    width: 350px;
+    /* z-index: 10; */
+    z-index: 100;
+    left:-342px;
+    transition: .3s;
+    min-height: 100vh;
+    border: 8px solid;
+
+}
+
+.setting-box.open {
+    left: 0 ;
+}
+
+.setting-box .toggel-settings {
+    position: absolute;
+    color: red;
+    right: -54px;
+    top: 112px;
+    background-color: #253c3c;
+    text-align: center;
+    cursor: pointer;
+}
+.setting-box .toggel-settings .setting-icon {
+    font-size: 30px;
+    padding: 6px 0;
+    width: 44px;
+}
+
+.setting-box .option-box {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #666;
+    padding: 0;
+}
+
+.setting-box .option-box h4{
+    margin: 0;
+    color: #666;
+
+    
+}
+.setting-box .option-box .colors-list{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+}
+
+.setting-box .option-box .colors-list li{
+    width: 36px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .5;
+    display: inline-block;
+}
+
+.setting-box .option-box .colors-list li.active{
+    opacity: 1;
+    border: 3px solid bisque ;
+}
+
+.setting-box .option-box .colors-list li:first-child{
+    background-color: #FF9800;
+}
+.setting-box .option-box .colors-list li:nth-child(2){
+    background-color: #E91E63;
+}
+.setting-box .option-box .colors-list li:nth-child(3){
+    background-color: #568e00;
+}
+.setting-box .option-box .colors-list li:nth-child(4){
+    background-color: #eb55ff;
+}
+.setting-box .option-box .colors-list li:last-child{
+    background-color: #ffff4f;
+}
+
+/********CHANGE BACKGROUND***************/
+.option-box.img li{
+    width: 55px;
+    list-style-type: none;
+    background-color: red;
+    height: 66px;
+    display: inline-block;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.option-box.img li.active { 
+    border: 3px solid rgb(13, 213, 176) ;
+}
+
+.option-box.img li:nth-child(2){
+    background-image: url(/images/01.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.option-box.img li:nth-child(3){
+    background-image: url(/images/02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.option-box.img li:nth-child(4){
+    background-image: url(/images/03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.option-box.img li:last-child{
+    background-image: url(/images/04.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/******END CHANGE BACKGROUND**********/
+
+/******RANDOME BACKGROUND************/
+.option-box.random button {
+    font-weight: 800;
+    width: 70px;
+    height: 45px;
+    background: #009687bf;
+
+    outline: none;
+}
+
+.option-box.random button.active {
+    background: #009687;
+    border: 3px solid white;
+}
+
+
+/*****end setting box*****/
+
+
+
+
+
 /*** landing page***/
 .landing {
     min-height: 100vh;
-    background-image: url(../images/03.png);
+    background-image: url(../images/05.jpg);
     background-size: cover;
-    transition: 2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .overlay {
@@ -55,6 +207,7 @@ body {
 .header-area .links li a {
     color: #fffefd;
     text-decoration: none;   
+    font-size: 23px;
 }
 
 .header-area .links li a:hover,
@@ -70,13 +223,68 @@ body {
     z-index: 2;
     color: #fffefd;
     text-align: center;
+    width: 100%;
 }
 
 .introduction-text h1 {
-    font-size: 53px;
+    font-size: 32px;
     margin: 0;
 }
 
 .introduction-text h1 span {
     color: var(--main-color);
 }
+
+/*****abou us **********/
+.container {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+ 
+
+.about-us .info-box {
+    flex: 1;
+    width: 43%;
+}
+
+.about-us .info-box h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.about-us .info-box p{
+    line-height: 1.5;
+    color: #777;
+}
+
+.about-us .image-box{
+    flex: 1;
+    text-align: center;
+}
+
+.about-us .image-box img{
+    width: 60%;
+    height: 300px;
+    border-radius: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+/*****end abou us **********/

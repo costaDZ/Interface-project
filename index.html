@@ -4,38 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"> -->
+    <script src="https://kit.fontawesome.com/918bd9e75f.js" crossorigin="anonymous"></script>
     <title>An empty page</title>
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-
-<div class="landing">
-    <div class="overlay">
-
+    <!--SETTING BOX-->
+    <div class="setting-box">
+        <div class="toggel-settings">
+            <i class="fas fa-cog setting-icon"></i>
+        </div>
+        <div class="setting-content">
+            <div class="option-box">
+                <h4>colors</h4>
+                <ul class="colors-list">
+                    <li data-color="#FF9800"></li>
+                    <li data-color="#E91E63"></li>
+                    <li data-color="#568e00"></li>
+                    <li data-color="#eb55ff"></li>
+                    <li data-color="#ffff4f"></li>
+                </ul>
+            </div>
+            <div class="option-box img">
+                <h4>Change background</h4>
+                <li data-img="01.jpeg"></li>
+                <li data-img="02.jpg"></li>
+                <li data-img="03.png"></li>
+                <li data-img="04.webp"></li>
+            </div>
+            <div class="option-box random">
+                <h4>Random background ?</h4>
+                <button>Yes</button>
+                <button>No</button>
+            </div>
+        </div>
     </div>
-    <div class="header-area">
-        <div class="logo">Special design</div>
-        <ul class="links">
-            <li><a href="#">About</a> </li>
-            <li><a href="#">Services</a> </li>
-            <li><a href="#">Products</a> </li>
-            <li><a href="#">Contact</a> </li>
-        </ul>
-    </div>
-<div class="introduction-text">
-    <h1>We Are <span>Creative</span> Agency</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta architecto, quasi, dolorum, </p>
-</div>
-</div>
 
+    <!--END SETTING BOX-->
+
+    <div class="landing">
+        <div class="overlay">
+        </div>
+        <div class="container">
+            <div class="header-area">
+                <div class="logo">Special design</div>
+                <ul class="links">
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Products</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="introduction-text">
+                <h1>We Are <span>Creative</span> Agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta architecto, quasi, dolorum, </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--START ABOUT US SECTION-->
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero architecto, fuga soluta odit lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, impedit recusandae voluptas dolores debitis distinctio veniam deleniti ipsam? Veritatis reprehenderit fugiat earum eaque nobis cupiditate sunt quia et illum quae. </p>
+            </div>
+            <div class="image-box">
+                <img src="/images/about us.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--START ABOUT US SECTION-->
 </body>
 
-
-
 </html>
-
