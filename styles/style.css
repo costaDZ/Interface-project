@@ -1,5 +1,5 @@
 :root {
-    --main-color: #FF9800;
+    --main-color: #59f50a;
 }
 
 * {
@@ -187,8 +187,13 @@ body {
 
 .header-area .logo {
     font-weight: bold;
-    width: 300px;
+    width: 400px;
     padding: 15px;
+    font-size: 35px;
+}
+
+.header-area .logo span {
+    color: var(--main-color);
 }
 
 .header-area .links {
@@ -207,7 +212,11 @@ body {
 .header-area .links li a {
     color: #fffefd;
     text-decoration: none;   
+<<<<<<< HEAD
     font-size: 23px;
+=======
+    font-size: 26px;
+>>>>>>> e6bcd8e6cd51eb193d03835e876f497c211024d1
 }
 
 .header-area .links li a:hover,
