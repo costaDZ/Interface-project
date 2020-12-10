@@ -1,1 +1,1 @@
-Hello every one , I am so ecxated o intrediouse this project for you.
+Hello every one , I am so ecxated o introduce this project for you.
